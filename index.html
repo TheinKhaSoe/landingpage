@@ -1,132 +1,135 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!-- <link rel="icon" type="image/x-icon" id="favicon" href="https://do4ntvlxo0nnu.cloudfront.net/StandardRegistration/Live/SHW288-d1152b26-2926-495c-a403-d89a80aFoodJ/Theme/FJfavicon20240730_051427.png"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <title>SHC 2025</title>
-    <style type="text/css">
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        body{
-            background: #ccc;
-        }
-        .site{
-            position: relative;
-            overflow: hidden;
-            margin: auto;
-            max-width: 1000px;
-            width: 100%;
-            background-color: #fff;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- <link rel="icon" type="image/x-icon" id="favicon" href="https://do4ntvlxo0nnu.cloudfront.net/StandardRegistration/Live/SHW288-d1152b26-2926-495c-a403-d89a80aFoodJ/Theme/FJfavicon20240730_051427.png"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <title>SHC 2025</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+    }
 
-        
+    body {
+      background: #ccc;
+    }
+
+    .site {
+      position: relative;
+      overflow: hidden;
+      margin: auto;
+      max-width: 1000px;
+      width: 100%;
+      background-color: #fff;
+    }
 
 
-        .banner{
-            max-width:1000px;
-            width: 100%;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .banner-image{
-            max-width: 1000px;
-            width:100%;
-        
 
-        }
-        #main-content{
-            min-height: -moz-calc(100vh - (168px));
-            min-height: -webkit-calc(100vh - (168px));
-            min-height: calc(100vh - (168px));
-        }
-        .content-wrap{
-            background-color: #ffffff;
-            padding: 20px 20px;
-            position: relative;
-            color: #000;
-            min-height: -moz-calc(100vh - (168px));
-            min-height: -webkit-calc(100vh - (168px));
-            min-height: calc(100vh - (168px));
-        }
 
-       
-        .registration-fees {
-         
-          
-        }
+    .banner {
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
 
-        .registration-fees h3 {
-          text-align: center;
-          font-size: 1.5rem;
-          margin-bottom: 1rem;
-          color: blue;
-        }
+    .banner-image {
+      max-width: 1000px;
+      width: 100%;
 
-        table {
-          width: 100%;
-          border-collapse: collapse;
-          margin-bottom: 1.5rem;
-          font-size: 14px;
-        }
 
-        table th,
-        table td {
-          border: 2px solid #ccc;
-          padding: 0.75rem;
-          text-align: center;
-          vertical-align: top;
-        }
+    }
 
-        table th {
-          background-color: #ffffff;
-        }
+    #main-content {
+      min-height: -moz-calc(100vh - (168px));
+      min-height: -webkit-calc(100vh - (168px));
+      min-height: calc(100vh - (168px));
+    }
 
-        .highlight {
-          color: red;
-          font-weight: bold;
-        }
+    .content-wrap {
+      background-color: #ffffff;
+      padding: 20px 20px;
+      position: relative;
+      color: #000;
+      min-height: -moz-calc(100vh - (168px));
+      min-height: -webkit-calc(100vh - (168px));
+      min-height: calc(100vh - (168px));
+    }
 
-        .note-title {
-          font-weight: bold;
-          margin-bottom: 0.5rem;
-        }
 
-        .notes {
-          padding-left: 1.2rem;
-          margin-bottom: 1.5rem;
-        }
+    .registration-fees {}
 
-        .symposium-box {
-          border: 1px solid #aaa;
-          padding: 1rem;
-          margin-bottom: 2rem;
-          background-color: #fafafa;
-        }
+    .registration-fees h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: blue;
+    }
 
-        .cta {
-          text-align: center;
-        }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.5rem;
+      font-size: 14px;
+    }
 
-        .cta button {
-          background-color: #d32f2f;
-          width: 230px;
-          color: white;
-          padding: 0.5rem 0.7rem;
-          font-size: 1rem;
-          font-weight: bold;
-          border: none;
-          border-radius: 20px;
-          cursor: pointer;
-        }
-      /*  .carousel-inner .carousel-item > div {
+    table th,
+    table td {
+      border: 2px solid #ccc;
+      padding: 0.75rem;
+      text-align: center;
+      vertical-align: top;
+    }
+
+    table th {
+      background-color: #ffffff;
+    }
+
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+
+    .note-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .notes {
+      padding-left: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .symposium-box {
+      border: 1px solid #aaa;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      background-color: #fafafa;
+    }
+
+    .cta {
+      text-align: center;
+    }
+
+    .cta button {
+      background-color: #d32f2f;
+      width: 230px;
+      color: white;
+      padding: 0.5rem 0.7rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    /*  .carousel-inner .carousel-item > div {
           display: flex;
           justify-content: space-between;
           gap:20px;
@@ -136,185 +139,211 @@
           width: 32%;
           border-radius: 8px;
         }*/
-            .carousel-inner .carousel-item > div {
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: center;
-              gap: 20px;
-              margin-left:10px;
-              margin-right:10px;
-            }
+    .carousel-inner .carousel-item>div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
 
-            .carousel-inner .text-center {
-              flex: 1 1 250px;
-              max-width: 23%;
-              min-width: 150px;
-            }
+    .carousel-inner .text-center {
+      flex: 1 1 250px;
+      max-width: 23%;
+      min-width: 150px;
+    }
 
-            .carousel-inner img {
-              width: 100%;
-              height: 80px;
-              border-radius: 8px;
-            }
+    .carousel-inner img {
+      width: 100%;
+      height: 80px;
+      border-radius: 8px;
+    }
 
-        .carousel-background {
-/*          //background-image: url('https://assets.unlayer.com/projects/0/1749018195507-Home.jpg');*/
-          width: 100%;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-color:darkblue;
-          opacity:  0.8;
-        }
-        .carousel-caption-custom {
-          margin-top: 10px;
-          font-size: 0.7rem;
-          color: #fff;
-          font-weight: 500;
-          min-height: 45px;
-        }
+    .carousel-background {
+      /*          //background-image: url('https://assets.unlayer.com/projects/0/1749018195507-Home.jpg');*/
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: darkblue;
+      opacity: 0.8;
+    }
 
-        .table1 th, .table1 td {
-            border: 2px solid #ccc;
-          vertical-align: middle !important;
-        }
-        .table-category,
-        .notes li,
-        .table1 td,
-        .table1 th {
-          font-family: 'Roboto', sans-serif;
-          color: #333;
-          font-weight: 500;
-        }
-        .carousel{
-            margin:0 auto;
-        }
-        .top-content{
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-            color: #333;
-            font-weight: 500;
-        }
-        .bold-content{
-            font-weight: bold;
+    .carousel-caption-custom {
+      margin-top: 10px;
+      font-size: 0.7rem;
+      color: #fff;
+      font-weight: 500;
+      min-height: 45px;
+    }
 
-        }
-        @media screen and (min-width: 500px) and (max-width: 800px) {
+    .table1 th,
+    .table1 td {
+      border: 2px solid #ccc;
+      vertical-align: middle !important;
+    }
+
+    .table-category,
+    .notes li,
+    .table1 td,
+    .table1 th {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .carousel {
+      margin: 0 auto;
+    }
+
+    .top-content {
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .bold-content {
+      font-weight: bold;
+
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 800px) {
       .pair {
-        height:450px !important;
-       
+        height: 450px !important;
+
       }
     }
-    @media screen and (min-width: 901px) {
-  .pair {
-       height:480px !important;
 
-  }
-}
- @media screen and (min-width: 500px) and (max-width: 800px) {
+    @media screen and (min-width: 901px) {
+      .pair {
+        height: 480px !important;
+
+      }
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 800px) {
       .pair2 {
-        height:450px !important;
-       
+        height: 450px !important;
       }
     }
-    @media screen and (min-width: 901px) {
-  .pair2 {
-       height:350px !important;
 
-  }
-}
-                
-        
-    </style>
+    @media screen and (min-width: 901px) {
+      .pair2 {
+        height: 350px !important;
+
+
+      }
+    }
+
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      /* iOS smooth scrolling */
+    }
+  </style>
 </head>
+
 <body>
 
-    <header>
-        <div class="banner">
-           <img src="https://assets.unlayer.com/projects/0/1749008849184-SHC-2025.jpg" class="banner-image">
-        </div>
-    </header>
-    <section class="site" id="page">
-        <section id="main-content">
-                <div class="content-wrap">
-                    <section class="registration-fees">
-                        <h3>The 1st Asian Hepatology Summit Organised by SHC</h3>
-                        <div class="top-content">
-                            <p>SHC started out simply as the Singapore Hepatitis Conference in 2014. Over the last 12 years, it has grown to three (3) distinct yet related conferences covering different aspects of hepatology. Thus we are renaming the entire event as the <br>
-                            <span class="highlight">Asian Hepatology Summit organised by SHC.</p>
-                            <p>In 2025, the 1st Asian Hepatology Summit will cover 4 events: <span class="bold-content">Singapore Hepatology Conference 2025,</span> </p>
-                            <p class="bold-content">The Asian HBV/HDV Endpoints Consensus Meeting, Singapore MASLD Symposium and the GP Symposium</p>
-                        </div>
-    
-                          <h3>Registration Fees</h3>
+  <header>
+    <div class="banner">
+      <img src="https://assets.unlayer.com/projects/0/1749008849184-SHC-2025.jpg" class="banner-image">
+    </div>
+  </header>
+  <section class="site" id="page">
+    <section id="main-content">
+      <div class="content-wrap">
+        <section class="registration-fees">
+          <h3>The 1st Asian Hepatology Summit Organised by SHC</h3>
+          <div class="top-content">
+            <p>SHC started out simply as the Singapore Hepatitis Conference in 2014. Over the last 12 years, it has
+              grown to three (3) distinct yet related conferences covering different aspects of hepatology. Thus we are
+              renaming the entire event as the <br>
+              <span class="highlight">Asian Hepatology Summit organised by SHC.
+            </p>
+            <p>In 2025, the 1st Asian Hepatology Summit will cover 4 events: <span class="bold-content">Singapore
+                Hepatology Conference 2025,</span> </p>
+            <p class="bold-content">The Asian HBV/HDV Endpoints Consensus Meeting, Singapore MASLD Symposium and the GP
+              Symposium</p>
+          </div>
 
-                          <table>
-                            <thead>
-                              <tr>
-                                <th>Admission to</th>
-                                <th>Category</th>
-                                <th>Early Bird Rate<br><small>By 30 June 2025 (SGD)</small></th>
-                                <th>Regular Rate<br><small>1 July to 21 Aug 2025 (SGD)</small></th>
-                                <th>Onsite Rate<br><small>From 22 Aug 2025 (SGD)</small></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td rowspan="2"><strong>Full Conference<br>(22–24 August 2025)</strong></td>
-                                <td class="table-category">Physicians, Scientists and Pharmaceutical Executives</td>
-                                <td class="highlight">250</td>
-                                <td class="highlight">350</td>
-                                <td class="highlight">750</td>
-                              </tr>
-                              <tr>
-                                <td class="table-category">Nurses, Students and Allied Health Professionals</td>
-                                <td class="highlight">150</td>
-                                <td class="highlight">250</td>
-                                <td class="highlight">550</td>
-                              </tr>
-                            </tbody>
-                          </table>
+          <h3>Registration Fees</h3>
+          <div class="table-responsive">
 
-                          <p class="note-title">Note:</p>
-                          <ol class="notes">
-                            <li>Singapore based Doctors, Nurses and Allied Health Professionals may register for free after providing MCR Number, SNB Number, or Allied Health Professional ID Number. Singapore based students in any of the above professions may also register for free upon uploading of appropriate student ID.</li>
-                            <li>Students are to produce proof from their institution.</li>
-                            <li>Allied Health Professionals includes Dietitians, Nutritionists, Pharmacists, Laboratory Technologists, Paramedics.</li>
-                          </ol>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Admission to</th>
+                  <th>Category</th>
+                  <th>Early Bird Rate<br><small>By 30 June 2025 (SGD)</small></th>
+                  <th>Regular Rate<br><small>1 July to 21 Aug 2025 (SGD)</small></th>
+                  <th>Onsite Rate<br><small>From 22 Aug 2025 (SGD)</small></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2"><strong>Full Conference<br>(22–24 August 2025)</strong></td>
+                  <td class="table-category">Physicians, Scientists and Pharmaceutical Executives</td>
+                  <td class="highlight">250</td>
+                  <td class="highlight">350</td>
+                  <td class="highlight">750</td>
+                </tr>
+                <tr>
+                  <td class="table-category">Nurses, Students and Allied Health Professionals</td>
+                  <td class="highlight">150</td>
+                  <td class="highlight">250</td>
+                  <td class="highlight">550</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-                            <div class="table-responsive d-flex justify-content-center">
-                              <table class="table1 table-bordered text-center" style="width: 100%; height: 250px; table-layout: fixed;">
-                                <thead class="table-light">
-                                 <!--  <tr>
+          <p class="note-title">Note:</p>
+          <ol class="notes">
+            <li>Singapore based Doctors, Nurses and Allied Health Professionals may register for free after providing
+              MCR Number, SNB Number, or Allied Health Professional ID Number. Singapore based students in any of the
+              above professions may also register for free upon uploading of appropriate student ID.</li>
+            <li>Students are to produce proof from their institution.</li>
+            <li>Allied Health Professionals includes Dietitians, Nutritionists, Pharmacists, Laboratory Technologists,
+              Paramedics.</li>
+          </ol>
+
+          <div class="table-responsive d-flex justify-content-center">
+            <table class="table1 table-bordered text-center" style="width: 100%; height: 250px; table-layout: fixed;">
+              <thead class="table-light">
+                <!--  <tr>
                                     <th colspan="3" class="align-middle fs-5">GP Symposium<br>24 August 2025, 2:00pm – 4:00pm</th>
                                   </tr> -->
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td class="align-middle">
-                                      GP Symposium<br>24 August 2025, 2:00pm – 4:00pm<br>
-                                    </td>
-                                    <td class="align-middle">
-                                     General Practitioners & Family Medicine Practitioners<br>Complimentary.
-                                    </td>
-                                    <td class="align-middle">
-                                     Open to Singapore Doctors Only<br><br>Maximum place sittings: 100 <br> <br> Places allocated on a first come first serve basis
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align-middle">
+                    GP Symposium<br>24 August 2025, 2:00pm – 4:00pm<br>
+                  </td>
+                  <td class="align-middle">
+                    General Practitioners & Family Medicine Practitioners<br>Complimentary.
+                  </td>
+                  <td class="align-middle">
+                    Open to Singapore Doctors Only<br><br>Maximum place sittings: 100 <br> <br> Places allocated on a
+                    first come first serve basis
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
 
-                          <div class="cta">
-                            <a href="https://event-admin.biz/registration/SHC2025-Reg" target="_blank">
-                              <button>
-                                 Register Now <i class="bi bi-arrow-right-circle-fill me-2"></i>
-                              </button>
-                          </a>
-                          </div>
-                          
-                         <!-- <div class="container-carousel mt-3">
+          <div class="cta">
+            <a href="https://event-admin.biz/registration/SHC2025-Reg" target="_blank">
+              <button>
+                Register Now <i class="bi bi-arrow-right-circle-fill me-2"></i>
+              </button>
+            </a>
+          </div>
+
+          <!-- <div class="container-carousel mt-3">
                                   <div id="multiImageCarousel" class="carousel slide carousel-background" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                       
@@ -348,95 +377,111 @@
                                       </div>
                         </div>
  -->
-                        
-    
-<div class="row mt-4">
-  <!--   <div class="col-md-6 col-lg-6" style="text-align:center">
+
+
+          <div class="row mt-4">
+            <!--   <div class="col-md-6 col-lg-6" style="text-align:center">
             <h3>Friday 22 August to <br> Saturday 23 August 2025</h3>
     </div>
     <div class="col-md-6 col-lg-6" style="text-align:center">
         <h3>Friday 22 August to <br> Sunday 24 August 2025</h3>
         
     </div> -->
-    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-            <!-- Card 1 -->
-             <h3>Friday 22 August to <br> Saturday 23 August 2025</h3>
-    <div class="pair" style="background: white; border-radius: 12px; border:2px solid #ccc; overflow: hidden; text-align: center; padding: 16px;">
-        <a href="https://shc-sg.com/singapore-hepatology-conference/" target="_blank" rel="404">
-      <img src="https://assets.unlayer.com/projects/0/1749091750644-SHC%202025.jpg" alt="Card 1 Image" style="width: 100%; border-radius: 8px;  height:100px;">
-  </a>
-      <p style="margin-top: 10px; font-size:17px; font-weight:bold;">Singapore Hepatology Conference 2025</p>
-      <p style="margin-top: 10px;">A full two (2) day meeting focusing on short, sharp clinical updates for the busy clinician covering all aspects of Liver Disease that are important to clinical practice from the World’s leading experts</p>
-     
-
-   </div>
-    </div>
-    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-         <!-- Card 2 -->
-         <h3>Friday 22 August to <br> Sunday 24 August 2025</h3>
-    <div class="pair" style="background: white; border-radius: 12px; border:2px solid #ccc; overflow: hidden; text-align: center; padding: 16px;">
-        <a href="https://shc-sg.com/hbv/" target="_blank" rel="404">
-      <img src="https://assets.unlayer.com/projects/0/1749092345724-HBV%20(1).jpg" alt="Card 2 Image" style="width: 100%; border-radius: 8px;  height:100px;">
-  </a>
-     <p style="margin-top: 10px; font-size:17px; font-weight:bold;">The Asian HBV/HDV Endpoints Consensus Meeting</p>
-      <p style="margin-top: 10px;">This will be a three (3) day meeting focusing on establishing consensus as well as examining challenges and opportunities in Hepatitis B and Hepatitis D endpoints, from the clinical, scientific and public health perspectives in Asia. The Objectives are:</p>
-      <div style="padding-left:3%; padding-right:3%;">
-        <ul style="text-align:left !important;">
-            <li>Endpoints standardization and consensus-building.</li>
-            <li>Novel treatments likely to achieve HBV Cure.</li>
-            <li>Blood and liver biomarkers for HBV Cure.</li>
-            <li>Definitions and Treatments for HDV Cure</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-</div>
-<div class="row mt-4">
-    <div class="col-md-12 col-lg-12 col-sm-12" style="text-align:center">
-            <h3>Sunday 24 August 2025</h3>
-    </div>
-
-    <div class="col-md-6 col-lg-6">
-            <!-- Card 1 -->
-    <div class="pair2" style="background: white; border-radius: 12px; border:2px solid #ccc; overflow: hidden; text-align: center; padding: 16px;">
-        <a href="https://shc-sg.com/singapore-masld-symposium/" target="_blank" rel="404">
-      <img src="https://assets.unlayer.com/projects/0/1749092402377-MASLD%20Symposium%20(2).jpg" alt="Card 1 Image" style="width: 100%; border-radius: 8px; height:100px;">
-  </a>
-      <p style="margin-top: 10px; font-size:17px; font-weight:bold;">Singapore MASLD Symposium 2025</p>
-      <p style="margin-top: 10px;">A full one (1) day symposium focusing on the rapid advances in treating fatty liver disease and MASLD from the World’s leading experts.</p>
-    </div>
-
-   
-    </div>
-    <div class="col-md-6 col-lg-6">
-         <!-- Card 2 -->
-    <div class="pair2" style="background: white; border-radius: 12px; border:2px solid #ccc; overflow: hidden; text-align: center; padding: 16px;">
-        <a href="https://shc-sg.com/gp-symposium/" target="_blank" rel="404">
-     <img src="https://assets.unlayer.com/projects/0/1749092682115-GP%20Symposium%20(1).jpg" alt="Card 4 Image" style="width: 100%; border-radius: 8px; height:100px;">
- </a>
-      <p style="margin-top: 10px; font-size:17px; font-weight:bold;">GP Symposium 2025</p>
-       <p style="margin-top: 10px;">A two (2) hour symposium focusing on updating General Practitioners on relevant clinical practices for managing liver disease in primary care.</p>
-    </div>
-    </div>
-</div>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mt-2">
+              <!-- Card 1 -->
+              <h3>Friday 22 August to <br> Saturday 23 August 2025</h3>
+              <div class="pair"
+                style="background: white; border-radius: 12px; border:2px solid #ccc; overflow: hidden; text-align: center; padding: 16px;">
+                <a href="https://shc-sg.com/singapore-hepatology-conference/" target="_blank" rel="404">
+                  <img src="https://assets.unlayer.com/projects/0/1749091750644-SHC%202025.jpg" alt="Card 1 Image"
+                    style="width: 100%; border-radius: 8px;  height:100px;">
+                </a>
+                <p style="margin-top: 10px; font-size:17px; font-weight:bold;">Singapore Hepatology Conference 2025</p>
+                <p style="margin-top: 10px;">A full two (2) day meeting focusing on short, sharp clinical updates for
+                  the busy clinician covering all aspects of Liver Disease that are important to clinical practice from
+                  the World’s leading experts</p>
 
 
-                       
-                      </div> 
-                    </div>
-
-
-                    </section>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mt-2">
+              <!-- Card 2 -->
+              <h3>Friday 22 August to <br> Sunday 24 August 2025</h3>
+              <div class="pair"
+                style="background: white; border-radius: 12px; border:2px solid #ccc; overflow: hidden; text-align: center; padding: 16px;">
+                <a href="https://shc-sg.com/hbv/" target="_blank" rel="404">
+                  <img src="https://assets.unlayer.com/projects/0/1749092345724-HBV%20(1).jpg" alt="Card 2 Image"
+                    style="width: 100%; border-radius: 8px;  height:100px;">
+                </a>
+                <p style="margin-top: 10px; font-size:17px; font-weight:bold;">The Asian HBV/HDV Endpoints Consensus
+                  Meeting</p>
+                <p style="margin-top: 10px;">This will be a three (3) day meeting focusing on establishing consensus as
+                  well as examining challenges and opportunities in Hepatitis B and Hepatitis D endpoints, from the
+                  clinical, scientific and public health perspectives in Asia. The Objectives are:</p>
+                <div style="padding-left:3%; padding-right:3%;">
+                  <ul style="text-align:left !important;">
+                    <li>Endpoints standardization and consensus-building.</li>
+                    <li>Novel treatments likely to achieve HBV Cure.</li>
+                    <li>Blood and liver biomarkers for HBV Cure.</li>
+                    <li>Definitions and Treatments for HDV Cure</li>
+                  </ul>
                 </div>
-        </section>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-12 col-lg-12 col-sm-12" style="text-align:center">
+              <h3>Sunday 24 August 2025</h3>
+            </div>
 
-    
-</section>
+            <div class="col-md-6 col-lg-6 mt-2">
+              <!-- Card 1 -->
+              <div class="pair2"
+                style="background: white; border-radius: 12px; border:2px solid #ccc; overflow: hidden; text-align: center; padding: 16px;">
+                <a href="https://shc-sg.com/singapore-masld-symposium/" target="_blank" rel="404">
+                  <img src="https://assets.unlayer.com/projects/0/1749092402377-MASLD%20Symposium%20(2).jpg"
+                    alt="Card 1 Image" style="width: 100%; border-radius: 8px; height:100px;">
+                </a>
+                <p style="margin-top: 10px; font-size:17px; font-weight:bold;">Singapore MASLD Symposium 2025</p>
+                <p style="margin-top: 10px;">A full one (1) day symposium focusing on the rapid advances in treating
+                  fatty liver disease and MASLD from the World’s leading experts.</p>
+              </div>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+
+            </div>
+            <div class="col-md-6 col-lg-6 mt-2">
+              <!-- Card 2 -->
+              <div class="pair2"
+                style="background: white; border-radius: 12px; border:2px solid #ccc; overflow: hidden; text-align: center; padding: 16px;">
+                <a href="https://shc-sg.com/gp-symposium/" target="_blank" rel="404">
+                  <img src="https://assets.unlayer.com/projects/0/1749092682115-GP%20Symposium%20(1).jpg"
+                    alt="Card 4 Image" style="width: 100%; border-radius: 8px; height:100px;">
+                </a>
+                <p style="margin-top: 10px; font-size:17px; font-weight:bold;">GP Symposium 2025</p>
+                <p style="margin-top: 10px;">A two (2) hour symposium focusing on updating General Practitioners on
+                  relevant clinical practices for managing liver disease in primary care.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+      </div>
+      </div>
+
+
+    </section>
+    </div>
+  </section>
+
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-    
+
 </body>
+
 </html>
