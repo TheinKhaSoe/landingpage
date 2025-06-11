@@ -69,7 +69,8 @@
       text-align: center;
       font-size: 1.5rem;
       margin-bottom: 1rem;
-      color: blue;
+      color: rgb(1, 1, 205);
+      font-weight: bold;
     }
 
     table {
@@ -84,8 +85,12 @@
       border: 2px solid #ccc;
       padding: 0.75rem;
       text-align: center;
-      vertical-align: top;
+      vertical-align: middle;
+      
     }
+    table td {
+        height: 80px;
+   }
 
     table th {
       background-color: #ffffff;
@@ -177,6 +182,13 @@
       font-weight: 500;
       min-height: 45px;
     }
+    .table1{
+      width: 100%;
+      min-height: 200px;
+      border-collapse: collapse;
+      margin-bottom: 1.5rem;
+      font-size: 14px;
+    }
 
     .table1 th,
     .table1 td {
@@ -185,12 +197,19 @@
     }
 
     .table-category,
-    .notes li,
+    .notes li {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      font-weight: 500;
+    }
     .table1 td,
     .table1 th {
       font-family: 'Roboto', sans-serif;
       color: #333;
-      font-weight: 500;
+      font-weight: bolder;
+    }
+    .tighter p {
+      line-height: 1.2; /* or lower (1.0 is tighter) */
     }
 
     .carousel {
@@ -242,6 +261,59 @@
       -webkit-overflow-scrolling: touch;
       /* iOS smooth scrolling */
     }
+    .bottom-section {
+      text-align: center;
+      padding: 30px 20px;
+      background: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+.venue-info h4 {
+  color: #0033cc;
+  margin-bottom: 5px;
+}
+
+.venue-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-bar {
+  background: linear-gradient(to right, #0b27d7, #2d0258);
+  color: white;
+  vertical-align: middle;
+  font-size: 20px;
+  text-align: center;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.footer-bar a {
+  color: #fff;
+  font-weight: bold;
+}
+.contact-info {
+  display: flex;
+  gap: 0.75rem; /* space between phone and link */
+  flex-wrap: wrap; /* allows wrap on small screens */
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-info .info-item {
+  white-space: nowrap; /* prevent wrapping within items */
+}
+
+@media (max-width: 600px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
   </style>
 </head>
 
@@ -264,9 +336,16 @@
               <span class="highlight">Asian Hepatology Summit organised by SHC.
             </p>
             <p>In 2025, the 1st Asian Hepatology Summit will cover 4 events: <span class="bold-content">Singapore
-                Hepatology Conference 2025,</span> </p>
-            <p class="bold-content">The Asian HBV/HDV Endpoints Consensus Meeting, Singapore MASLD Symposium and the GP
-              Symposium</p>
+                Hepatology Conference 2025,</span>
+            <span class="bold-content">The Asian HBV/HDV Endpoints Consensus Meeting, Singapore MASLD Symposium and the GP
+              Symposium</span></p>
+          </div>
+          <div class="cta mt-5 mb-5">
+            <a href="https://event-admin.biz/registration/SHC2025-Reg" target="_blank">
+              <button>
+                Register Now <i class="bi bi-arrow-right-circle-fill me-2"></i>
+              </button>
+            </a>
           </div>
 
           <h3>Registration Fees</h3>
@@ -311,7 +390,7 @@
           </ol>
 
           <div class="table-responsive d-flex justify-content-center">
-            <table class="table1 table-bordered text-center" style="width: 100%; height: 250px; table-layout: fixed;">
+            <table class="table1 table-bordered text-center">
               <thead class="table-light">
                 <!--  <tr>
                                     <th colspan="3" class="align-middle fs-5">GP Symposium<br>24 August 2025, 2:00pm – 4:00pm</th>
@@ -320,14 +399,14 @@
               <tbody>
                 <tr>
                   <td class="align-middle">
-                    GP Symposium<br>24 August 2025, 2:00pm – 4:00pm<br>
+                    GP Symposium<br>24 August 2025 <br> 2:00pm – 4:00pm<br>
                   </td>
                   <td class="align-middle">
-                    General Practitioners & Family Medicine Practitioners<br>Complimentary.
+                    General Practitioners & <br> Family Medicine Practitioners
                   </td>
-                  <td class="align-middle">
-                    Open to Singapore Doctors Only<br><br>Maximum place sittings: 100 <br> <br> Places allocated on a
-                    first come first serve basis
+                  <td class="align-middle tighter">
+                    <p>Open to Singapore Doctors Only<br><br>Complimentary<br><br>Maximum place sittings: 100 <br> Places allocated on a
+                    first come first serve basis</p>
                   </td>
                 </tr>
               </tbody>
@@ -335,13 +414,7 @@
           </div>
 
 
-          <div class="cta">
-            <a href="https://event-admin.biz/registration/SHC2025-Reg" target="_blank">
-              <button>
-                Register Now <i class="bi bi-arrow-right-circle-fill me-2"></i>
-              </button>
-            </a>
-          </div>
+          
 
           <!-- <div class="container-carousel mt-3">
                                   <div id="multiImageCarousel" class="carousel slide carousel-background" data-bs-ride="carousel">
@@ -471,11 +544,37 @@
 
 
     </section>
-    </div>
+      <div class="bottom-section">
+  <div class="cta mt-5 mb-5">
+            <a href="https://event-admin.biz/registration/SHC2025-Reg" target="_blank">
+              <button>
+                Register Now <i class="bi bi-arrow-right-circle-fill me-2"></i>
+              </button>
+            </a>
+          </div>
+
+  <div class="venue-info registration-fees">
+    <h3>Venue of Meeting</h3>
+    <p style="font-size:20px;">
+      <strong style="color:#d32f2f;">The Sheraton Towers Hotel, Singapore</strong><br>
+      <p style="font-weight: bold;">39 Scotts Rd, Singapore 228230</p>
+    </p>
+    <p class="contact-info">
+  <span class="info-item">📞 65 6-737-6888</span>
+  <span class="info-item">🌐 <a href="https://www.marriott.com" target="_blank">www.marriott.com</a></span>
+</p>
+
+  </div>
+</div>
   </section>
+<footer class="banner">
+    <div class="footer-bar">
+    <p>Please visit <a style="text-decoration: none;" href="https://www.shc-sg.com" target="_blank">www.shc-sg.com</a> for detailed information</p>
+  </div>
+</footer>
 
 
-  </section>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
